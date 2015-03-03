@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="tei_lite4Twardowski.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_lite4Twardowski.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt xml:lang="pl">
+            <title type="main">"O czynnościach i wytworach" Kazimierza Twardowskiego: wydanie cyfrowe</title>
+            <author xml:id="KaTw">Kazimierz Twardowski</author>
+            <editor xml:id="WiMis">Wioletta Miskiewicz</editor>
+            <principal ref="#WiMis">Wioletta Miskiewicz</principal>
+            <sponsor>Połączone Biblioteki WFiS UW</sponsor>
+            <sponsor xml:lang="fr">Institut d'histoire et de philosophie des sciences et des techniques, IHPST UMR 8590</sponsor>
+
+            <!-- Tutaj warto wymienić role wszystkich zaangażowanych, np. w skanowanie itp. 
+
+            <respStmt>
+               <resp>skanowanie</resp>
+               <name>Łukasz?</name>
+            </respStmt>
+            -->
+         </titleStmt>
+         <!--<extent>2.4 MiB</extent>-->
+         <extent>
+          <!--  To nie jest optymalne rozwiązanie, ale optymalne nie istnieje obecnie w TEI          -->
+            <measure unit="MiB" quantity="2.4"/>
+            <!--<media mimeType="application/pdf" url="http://www.elv-akt.net/fichiers/archives/kazimierz_twardowski/publications/13_o_czynnosciach_i_wytworach.pdf"></media>-->
+         </extent>
+         <publicationStmt>
+            <publisher>CNRS</publisher>
+            <date when="2008-08-22">22 sierpnia 2008</date>
+            <pubPlace ref="http://www.elv-akt.net/fichiers/archives/kazimierz_twardowski/publications/13_o_czynnosciach_i_wytworach.pdf">
+               <name type="org" xml:lang="en">Kazimierz Twardowski Digital Archives</name>
+               <name type="org" xml:lang="fr">Archives Numériques de l’École de Lvov et de Varsovie</name>
+               <name type="org" xml:lang="pl">Cyfrowe Archiwum Kazimierza Twardowskiego</name>
+            </pubPlace>
+            <availability status="restricted"><p>Available by Subscription. See <ref target="http://www.elv-akt.net">http://www.elv-akt.net</ref></p></availability>
+            <idno type="URL">http://www.elv-akt.net/ressources/archives.php?id_archive=13</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <author ref="#KaTw">Kazimierz Twardowski</author>
+                  <title type="main">O czynnościach i wytworach</title>
+                  <title>Kilka uwag z pogranicza psychologii, gramatyki i logiki</title>
+                  <edition>Odbitka z księgi pamiątkowej ku uczczeniu 250-tej rocznicy założenia
+                     Uniwersytetu Lwowskiego przez króla Jana Kazimierza</edition>
+                  <imprint>
+                     <classCode scheme="http://purl.org/dc/terms/subject">Philosophy</classCode>
+                     <classCode scheme="http://purl.org/dc/terms/subject">Mail</classCode>  <!-- błąd? -->
+                     <classCode scheme="http://purl.org/dc/terms/subject">Lvov-Warsaw_School</classCode>
+                     <pubPlace>Kraków</pubPlace>
+                     <date>1911</date>
+                     <respStmt>
+                        <resp>skład główny w</resp>
+                        <name><name type="institution">księgarni Gubrynowicza i Syna</name> we <name
+                              type="place">Lwowie</name></name>
+                     </respStmt>
+                     <publisher><name type="institution"><choice>
+                              <abbr>Drukarnia Uniw. Jagiell.</abbr>
+                              <expan>Drukarnia Uniwersytetu Jagiellońskiego</expan>
+                           </choice></name> pod zarządem <name type="person">Józefa Filipowskiego</name></publisher>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+<!--           
+               
+               To nie jest poprawne, ale zostawiam jako przykład tego, jak można wykorzystać <bibl> - tyle że użycie <bibl>
+               wewnątrz sourceDesc nie ma najmniejszego uzasadnienia. Musiałem zmienić nieco TEILite, żeby móc użyć <biblStruct>
+               -PB
+               
+               <bibl xml:lang="pl">
+               <title type="main">O CZYNNOŚCIACH I WYTWORACH</title>
+               <title>KILKA UWAG Z POGRANICZA PSYCHOLOGII, GRAMATYKI I LOGIKI</title>
+               <respStmt>
+                  <resp>NAPISAŁ</resp>
+                  <name ref="#KaTw">KAZIMIERZ TWARDOWSKI</name>
+               </respStmt>
+               <edition>ODBITKA Z KSIĘGI PAMIĄTKOWEJ KU UCZCZENIU 250-TEJ ROCZNICY<lb/>ZAŁOŻENIA UNIWERSYTETU LWOWSKIEGO PRZEZ KRÓLA JANA KAZIMIERZA</edition>
+               <pubPlace><name>KRAKÓW</name></pubPlace>
+               <respStmt>
+                  <resp>SKŁAD GŁÓWNY W</resp>
+                  <name><name type="institution">KSIĘGARNI GUBRYNOWICZA I SYNA</name> WE <name type="place">LWOWIE</name></name> <!-\- interpunkcja osobno -\-> 
+               </respStmt>.
+               <publisher><name type="institution"><choice><abbr>DRUKARNIA UNIW. JAGIELL.</abbr><expan>DRUKARNIA UNIWERSYTETU JAGIELLOŃSKIEGO</expan></choice></name> POD ZARZĄDEM <name type="person">JÓZEFA
+                  FILIPOWSKIEGO</name></publisher>.
+               <date when="1911">1911</date>.
+               <!-\-<idno type="signaturaIFUW">23452</idno> to jest chyba akcydentalne -\->
+            </bibl>-->
+         </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+         <projectDesc>
+            <p>e-LV (Archives Numériques de l’École de Lvov et de Varsovie) jest projektem
+               IHPST/Paryż (Institut d’Histoire et de Philosophie des Sciences et des
+               Techniques).</p>
+            <p>Strona elv-akt.net zawiera archiwum cyfrowe rękopisów i druków zarówno samego
+               Twardowskiego, jak i myślicieli z kręgów jego Szkoły.</p>
+            <p>Archiwum e-LV jest również platformą badań i wymiany informacji w dziedzinie polskiej
+               filozofii analitycznej i elektronicznym wydawnictwem (XML/TEI).</p>
+         </projectDesc>
+     </encodingDesc>
+     <profileDesc>
+     <!--   Klasyfikacja oczywiście taka sama, jak dla oryginału     -->
+        <textClass>
+           <classCode scheme="http://purl.org/dc/terms/subject">Philosophy</classCode>
+           <classCode scheme="http://purl.org/dc/terms/subject">Mail</classCode>      <!-- błąd? -->
+           <classCode scheme="http://purl.org/dc/terms/subject">Lvov-Warsaw_School</classCode>
+        </textClass>
+     </profileDesc>
+     <revisionDesc>
+        <change when="0001"></change>
+        <change when="0001"></change>
+     </revisionDesc>
+  </teiHeader>
+   <facsimile>
+      <media
+         url="http://www.elv-akt.net/fichiers/archives/kazimierz_twardowski/publications/13_o_czynnosciach_i_wytworach.pdf"
+         mimeType="application/pdf"/>
+   </facsimile>
+</TEI>
