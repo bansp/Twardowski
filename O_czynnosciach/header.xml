@@ -20,11 +20,9 @@
             </respStmt>
             -->
          </titleStmt>
-         <!--<extent>2.4 MiB</extent>-->
          <extent>
           <!--  To nie jest optymalne rozwiązanie, ale optymalne nie istnieje obecnie w TEI          -->
             <measure unit="MiB" quantity="2.4"/>
-            <!--<media mimeType="application/pdf" url="http://www.elv-akt.net/fichiers/archives/kazimierz_twardowski/publications/13_o_czynnosciach_i_wytworach.pdf"></media>-->
          </extent>
          <publicationStmt>
             <publisher>CNRS</publisher>
@@ -36,6 +34,7 @@
             </pubPlace>
             <availability status="restricted"><p>Available by Subscription. See <ref target="http://www.elv-akt.net">http://www.elv-akt.net</ref></p></availability>
             <idno type="URL">http://www.elv-akt.net/ressources/archives.php?id_archive=13</idno>
+            <!--  zdecydowanie nie jest "persistent ID"...  no ale cóż   -->
          </publicationStmt>
          <sourceDesc>
             <biblStruct>
@@ -63,30 +62,6 @@
                   </imprint>
                </monogr>
             </biblStruct>
-<!--           
-               
-               To nie jest poprawne, ale zostawiam jako przykład tego, jak można wykorzystać <bibl> - tyle że użycie <bibl>
-               wewnątrz sourceDesc nie ma najmniejszego uzasadnienia. Musiałem zmienić nieco TEILite, żeby móc użyć <biblStruct>
-               -PB
-               
-               <bibl xml:lang="pl">
-               <title type="main">O CZYNNOŚCIACH I WYTWORACH</title>
-               <title>KILKA UWAG Z POGRANICZA PSYCHOLOGII, GRAMATYKI I LOGIKI</title>
-               <respStmt>
-                  <resp>NAPISAŁ</resp>
-                  <name ref="#KaTw">KAZIMIERZ TWARDOWSKI</name>
-               </respStmt>
-               <edition>ODBITKA Z KSIĘGI PAMIĄTKOWEJ KU UCZCZENIU 250-TEJ ROCZNICY<lb/>ZAŁOŻENIA UNIWERSYTETU LWOWSKIEGO PRZEZ KRÓLA JANA KAZIMIERZA</edition>
-               <pubPlace><name>KRAKÓW</name></pubPlace>
-               <respStmt>
-                  <resp>SKŁAD GŁÓWNY W</resp>
-                  <name><name type="institution">KSIĘGARNI GUBRYNOWICZA I SYNA</name> WE <name type="place">LWOWIE</name></name> <!-\- interpunkcja osobno -\-> 
-               </respStmt>.
-               <publisher><name type="institution"><choice><abbr>DRUKARNIA UNIW. JAGIELL.</abbr><expan>DRUKARNIA UNIWERSYTETU JAGIELLOŃSKIEGO</expan></choice></name> POD ZARZĄDEM <name type="person">JÓZEFA
-                  FILIPOWSKIEGO</name></publisher>.
-               <date when="1911">1911</date>.
-               <!-\-<idno type="signaturaIFUW">23452</idno> to jest chyba akcydentalne -\->
-            </bibl>-->
          </sourceDesc>
       </fileDesc>
      <encodingDesc>
