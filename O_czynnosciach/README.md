@@ -6,6 +6,7 @@ Wioletta Miśkiewicz's seminar "Digital Humanities: Projects, People, Theory" (3
 the University of Warsaw in the academic year 2014-2015.
 
 Author: Piotr Bański
+
 Licenses: choose between:
 * CC BY 4.0 Unported
 * BSD 2-clause
