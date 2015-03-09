@@ -6,50 +6,78 @@
       <fileDesc>
          <titleStmt xml:lang="pl">
             <title type="main">"O czynnościach i wytworach" Kazimierza Twardowskiego: wydanie cyfrowe</title>
-            <author xml:id="KaTw">Kazimierz Twardowski</author>
+            <respStmt>
+               <resp>autor oryginału</resp>
+               <name xml:id="KaTw">Kazimierz Twardowski</name>
+               <!-- tu należy dodać ref zewn.-->
+            </respStmt>
             <editor xml:id="WiMis">Wioletta Miskiewicz</editor>
             <principal ref="#WiMis">Wioletta Miskiewicz</principal>
-            <sponsor>Połączone Biblioteki WFiS UW</sponsor>
             <sponsor xml:lang="fr">Institut d'histoire et de philosophie des sciences et des techniques, IHPST UMR 8590</sponsor>
-
-            <!-- Tutaj warto wymienić role wszystkich zaangażowanych, np. w skanowanie itp. 
-
             <respStmt>
                <resp>skanowanie</resp>
-               <name>Łukasz?</name>
+               <name>Łukasz Ratajczak</name>
             </respStmt>
-            -->
+            <respStmt>
+               <resp>kontrybutor</resp>
+               <name>Połączone Biblioteki WFiS UW</name>
+            </respStmt>
          </titleStmt>
          <extent>
           <!--  To nie jest optymalne rozwiązanie, ale optymalne nie istnieje obecnie w TEI          -->
             <measure unit="MiB" quantity="2.4"/>
+            <!-- A gdzie mam wpisać liczbę stron w PDF-ie? 19 pp. -->
          </extent>
          <publicationStmt>
             <publisher>CNRS</publisher>
             <date when="2008-08-22">22 sierpnia 2008</date>
-            <pubPlace ref="http://www.elv-akt.net/fichiers/archives/kazimierz_twardowski/publications/13_o_czynnosciach_i_wytworach.pdf">
+            <pubPlace>Paris</pubPlace>
+<!--
+               Co zrobić z tymi danymi?
+               
+               <pubPlace ref="http://www.elv-akt.net/fichiers/archives/kazimierz_twardowski/publications/13_o_czynnosciach_i_wytworach.pdf">
                <name type="org" xml:lang="en">Kazimierz Twardowski Digital Archives</name>
                <name type="org" xml:lang="fr">Archives Numériques de l’École de Lvov et de Varsovie</name>
                <name type="org" xml:lang="pl">Cyfrowe Archiwum Kazimierza Twardowskiego</name>
             </pubPlace>
-            <availability status="restricted"><p>Available by Subscription. See <ref target="http://www.elv-akt.net">http://www.elv-akt.net</ref></p></availability>
+-->
+            <availability status="restricted">
+               <p xml:lang="en">Available by Subscription. See <ref target="http://www.elv-akt.net">http://www.elv-akt.net</ref></p>
+               <p>Dostępne na zasadzie subskrypcji do użytku naukowego i osobistego, nie do użytku komercyjnego. Patrz <ref target="http://www.elv-akt.net">http://www.elv-akt.net</ref></p>
+            </availability>
             <idno type="URL">http://www.elv-akt.net/ressources/archives.php?id_archive=13</idno>
             <!--  zdecydowanie nie jest "persistent ID"...  no ale cóż   -->
          </publicationStmt>
+         <notesStmt>
+            <note>
+               <!--  
+        PDF ma wiele błędów
+        egzemplarz, który posłużył jako źródło: B IFUW, sygnatura
+        
+        
+        O źródle: W Bibliotekach Połączonych istnieje egzemplarz z notatkami Autora (PAN 12439)
+        
+        -->
+            </note>
+         </notesStmt>
          <sourceDesc>
             <biblStruct>
                <monogr>
                   <author ref="#KaTw">Kazimierz Twardowski</author>
+                  <!-- tu należy dodać ref zewn.-->
+                  
                   <title type="main">O czynnościach i wytworach</title>
                   <title>Kilka uwag z pogranicza psychologii, gramatyki i logiki</title>
                   <edition>Odbitka z księgi pamiątkowej ku uczczeniu 250-tej rocznicy założenia
-                     Uniwersytetu Lwowskiego przez króla Jana Kazimierza</edition>
+                     Uniwersytetu Lwowskiego przez króla Jana Kazimierza
+                     <note>Na "Odbitce" widnieje data 1911 i Kraków jako miejsce publikacji.
+                        Pochodzi ona z "Księgi pamiątkowej..." datowanej na rok 1912.</note>
+                  </edition>
                   <imprint>
                      <classCode scheme="http://purl.org/dc/terms/subject">Philosophy</classCode>
-                     <classCode scheme="http://purl.org/dc/terms/subject">Mail</classCode>  <!-- błąd? -->
                      <classCode scheme="http://purl.org/dc/terms/subject">Lvov-Warsaw_School</classCode>
                      <pubPlace>Kraków</pubPlace>
-                     <date>1911</date>
+                     <date when="1911">1911</date>
                      <respStmt>
                         <resp>skład główny w</resp>
                         <name><name type="institution">księgarni Gubrynowicza i Syna</name> we <name
@@ -79,14 +107,14 @@
      <!--   Klasyfikacja oczywiście taka sama, jak dla oryginału     -->
         <textClass>
            <classCode scheme="http://purl.org/dc/terms/subject">Philosophy</classCode>
-           <classCode scheme="http://purl.org/dc/terms/subject">Mail</classCode>      <!-- błąd? -->
            <classCode scheme="http://purl.org/dc/terms/subject">Lvov-Warsaw_School</classCode>
         </textClass>
      </profileDesc>
-     <revisionDesc>
-        <change when="0001"></change>
-        <change when="0001"></change>
-     </revisionDesc>
+      <revisionDesc>
+         <change when="2015-03-09" who="Piotr">Temporary post-seminar version, to be further discussed at HumCyf moodle</change>
+         <change when="2015-03-03" who="Piotr">First version to be published on GitHub</change>
+         <change when="2015-02-24" who="Piotr">First version, still very shaky.</change>
+      </revisionDesc>
   </teiHeader>
    <facsimile>
       <media
