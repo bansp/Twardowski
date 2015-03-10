@@ -15,18 +15,18 @@
             <principal ref="#WiMis">Wioletta Miskiewicz</principal>
             <sponsor xml:lang="fr">Institut d'histoire et de philosophie des sciences et des techniques, IHPST UMR 8590</sponsor>
             <respStmt>
-               <resp>skanowanie</resp>
-               <name>Łukasz Ratajczak</name>
-            </respStmt>
-            <respStmt>
                <resp>kontrybutor</resp>
                <name>Połączone Biblioteki WFiS UW</name>
+            </respStmt>
+            <respStmt>
+               <resp>skanowanie</resp>
+               <name>Łukasz Ratajczak</name>
             </respStmt>
          </titleStmt>
          <extent>
           <!--  To nie jest optymalne rozwiązanie, ale optymalne nie istnieje obecnie w TEI          -->
             <measure unit="MiB" quantity="2.4"/>
-            <!-- A gdzie mam wpisać liczbę stron w PDF-ie? 19 pp. -->
+            <measure unit="page">19</measure>
          </extent>
          <publicationStmt>
             <publisher>CNRS</publisher>
@@ -42,7 +42,6 @@
             </pubPlace>
 -->
             <availability status="restricted">
-               <p xml:lang="en">Available by Subscription. See <ref target="http://www.elv-akt.net">http://www.elv-akt.net</ref></p>
                <p>Dostępne na zasadzie subskrypcji do użytku naukowego i osobistego, nie do użytku komercyjnego. Patrz <ref target="http://www.elv-akt.net">http://www.elv-akt.net</ref></p>
             </availability>
             <idno type="URL">http://www.elv-akt.net/ressources/archives.php?id_archive=13</idno>
@@ -73,6 +72,7 @@
                      <note>Na "Odbitce" widnieje data 1911 i Kraków jako miejsce publikacji.
                         Pochodzi ona z "Księgi pamiątkowej..." datowanej na rok 1912.</note>
                   </edition>
+<!--                  <idno type="sygnatura"></idno>-->
                   <imprint>
                      <classCode scheme="http://purl.org/dc/terms/subject">Philosophy</classCode>
                      <classCode scheme="http://purl.org/dc/terms/subject">Lvov-Warsaw_School</classCode>
@@ -88,6 +88,7 @@
                               <expan>Drukarnia Uniwersytetu Jagiellońskiego</expan>
                            </choice></name> pod zarządem <name type="person">Józefa Filipowskiego</name></publisher>
                   </imprint>
+                  <extent><measure unit="page">38</measure></extent>
                </monogr>
             </biblStruct>
          </sourceDesc>
